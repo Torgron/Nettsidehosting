@@ -1,19 +1,16 @@
 <%- include("partials/header")%>
 
-<section class="colored-con">
-    <div class="container section-con">
-        <video
-            id="my-video"
-            class="video-js"
-            controls
-            preload="auto"
-            width="640"
-            height="264"
-            data-setup="{}"
-        >
-            <source src="/" type="video/mp4" />
-        </video>
-    </div>
-</section>
+    <video
+        id="my-video"
+        class="video-js"
+        controls
+        preload="auto"
+        poster="/images/Heroku_video_thumbnail.png"
+        width="960"
+        height="540"
+        data-setup="{}"
+    >
+        <source src="/videos/Heroku_app_eksempel_1.mp4" type="video/mp4" />
+    </video>
 
 <%- include("partials/footer")%>
