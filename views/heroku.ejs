@@ -13,4 +13,28 @@
         <source src="/videos/Heroku_app_eksempel_1.mp4" type="video/mp4" />
     </video>
 
+    <p>
+        - Ha en Node applikasjon som er lastet opp i et Github repository
+        - Hvis det ikke er gjort allerede, husk å installere Git 
+            (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+            (https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
+        På nettet:
+        - Gå til heroku.com
+        - Trykk på "New" etterfulgt av "Create new app"
+        - Gi appen et navn og velg region, trykk så på "Create app"
+
+        I prosjektmappen:
+        - Lag en fil som heter Procfile
+        - Skriv inn "web: node (navnet på hovedjavascriptfilen(app.js))
+        - Åpne hovedjavascriptfilen og bytt ut porten med "process.env.PORT"
+
+        I terminal:
+        - Åpne applikasjonsmappen i en terminal og skriv inn "heroku git:remote -a (navnet på Heroku appen(heroku-eksempel-test))"
+        - Følg instruksjonene i terminalen og logg inn i Heroku CLI
+        - Skriv inn "git add .", "git commit -am "kommentar" og "git push heroku main" i terminalen
+
+        - Gå inn på Heroku og trykk "Open app"
+    </p>
+
 <%- include("partials/footer")%>
