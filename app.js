@@ -12,13 +12,16 @@ app.use("/css", express.static("./node_modules/bootstrap/dist/css"));
 app.use("/js", express.static("./node_modules/bootstrap/dist/js"));
 
 app.get("/", (req, res) => {
-    res.render("home");
+    res.render("home", {page_name: "home"});
 });
 
+app.get("/heroku", (req, res) => {
+    res.render("heroku", {page_name: "heroku"});
+});
 
-
-
-
+app.get("/github", (req, res) => {
+    res.render("github", {page_name: "github"});
+});
 
 const PORT = process.env.PORT || 8080;
 
