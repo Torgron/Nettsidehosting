@@ -1,26 +1,48 @@
 <%- include("partials/header")%>
 
-    <video
-        id="my-video"
-        class="video-js"
-        controls
-        preload="auto"
-        poster="/images/Github_video_thumbnail.png"
-        width="960"
-        height="540"
-        data-setup="{}"
-    >
-        <source src="/videos/Github_Pages_eksempel_1.mp4" type="video/mp4" />
-    </video>
+    <div class="card mx-auto" style="width: 60rem;">
+        <div class="card-header">
+            <h1 class="card-title text-center">Heroku</h1>
+        </div>
+        <div class="card-body">
+            <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                poster="/images/Github_video_thumbnail.png"
+                width="960"
+                height="540"
+                data-setup="{}"
+            >
+                <source src="/videos/Github_Pages_eksempel_1.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
 
-    <p>
-        - Ha en statisk nettside som er lastet opp i et Github repository
-        - Pass på at hovedhtmlfilen heter "index.html"
+    <div class="card mx-auto" style="width: 60rem;">
+        <div class="card-header">
+            <h1 class="card-title text-center">Før du starter</h1>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                - Ha en statisk nettside som er lastet opp i et Github repository<br>
+                - Pass på at hovedhtmlfilen heter "index.html"
+            </p>
+        </div>
+    </div>
 
-        På nettet:
-        - På github.com, gå til repositoriet og velg "Settings"
-        - Trykk på "Pages" på venstre side og velg "main" under "Source"
-        - Trykk "Save" og få lenken til nettsiden
-    </p>
+    <div class="card mx-auto" style="width: 60rem;">
+        <div class="card-header">
+            <h1 class="card-title text-center">På nettet</h1>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                - På github.com, gå til repositoriet og velg "Settings"<br>
+                - Trykk på "Pages" på venstre side og velg "main" under "Source"<br>
+                - Trykk "Save" og få lenken til nettsiden
+            </p>
+        </div>
+    </div>
 
 <%- include("partials/footer")%>

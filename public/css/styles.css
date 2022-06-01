@@ -1,20 +1,36 @@
-video {
-	border: 10px solid black;
-	border-radius: 10px;
-}
+/* Header */
 
 .navbar-custom {
 	background-color: #FFCCF9;
 }
+
+video {
+	border: 10px solid black;
+	border-radius: 10px;
+	width: 50rem;
+}
+
+
+/* Body */
+
+.card {
+	font-size: 2rem;
+	margin-top: 2rem;
+}
+
+.card-img {
+	width: 50rem;
+}
+
+
+/* Footer */
 
 .footer-padding {
 	padding-bottom: 3rem;
 }
 
 .footer {
-	position: absolute;
 	text-align: center;
-	bottom: 0;
 	width: 100%;
 	height: 60px;
 	background-color: #FFCCF9;

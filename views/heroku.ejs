@@ -1,40 +1,133 @@
 <%- include("partials/header")%>
 
-    <video
-        id="my-video"
-        class="video-js"
-        controls
-        preload="auto"
-        poster="/images/Heroku_video_thumbnail.png"
-        width="960"
-        height="540"
-        data-setup="{}"
-    >
-        <source src="/videos/Heroku_app_eksempel_1.mp4" type="video/mp4" />
-    </video>
+    <div class="card mx-auto" style="width: 60rem;">
+        <div class="card-header">
+            <h1 class="card-title text-center">Heroku</h1>
+        </div>
+        <div class="card-body text-center">
+            <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                poster="/images/Heroku_video_thumbnail.png"
+                data-setup="{}"
+            >
+                <source src="/videos/Heroku_app_eksempel_1.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
 
-    <p>
-        - Ha en Node applikasjon som er lastet opp i et Github repository
-        - Hvis det ikke er gjort allerede, husk å installere Git 
-            (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-            (https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+    <div class="card mx-auto" style="width: 60rem;">
+        <div class="card-header">
+            <h1 class="card-title text-center">Før du starter</h1>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                <ul>
+                    <li>
+                        Ha en Node applikasjon som er lastet opp i et Github repository
+                    </li>
+                </ul>
+                <img class="card-img d-block mx-auto border border-dark border-5" src="/images/H_Github-Repo.png">
+                <ul>
+                    <li>
+                        Hvis det ikke er gjort allerede, husk å installere Git
+                        <br><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">1.5 Getting Started - Installing Git</a>
+                        <br><a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup" target="_blank">1.6 Getting Started - First-Time Git Setup</a> 
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
 
-        På nettet:
-        - Gå til heroku.com
-        - Trykk på "New" etterfulgt av "Create new app"
-        - Gi appen et navn og velg region, trykk så på "Create app"
+    <div class="card mx-auto" style="width: 60rem;">
+        <div class="card-header">
+            <h1 class="card-title text-center">På nettet</h1>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                <ul>
+                    <li>
+                        Gå til heroku.com
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Trykk på "<i>New</i>" etterfulgt av "<i>Create new app</i>"
+                    </li>
+                </ul>
+                <img class="card-img d-block mx-auto border border-primary border-5" src="/images/H_Create-app.png">
+                <ul>
+                    <li>
+                        Gi appen et navn og velg region, trykk så på "<i>Create app</i>"
+                    </li>
+                </ul>
+                <img class="card-img d-block mx-auto border border-dark border-5" src="/images/H_Create-app-2.png">
+            </p>
+        </div>
+    </div>
 
-        I prosjektmappen:
-        - Lag en fil som heter Procfile
-        - Skriv inn "web: node (navnet på hovedjavascriptfilen(app.js))
-        - Åpne hovedjavascriptfilen og bytt ut porten med "process.env.PORT"
+    <div class="card mx-auto" style="width: 60rem;">
+        <div class="card-header">
+            <h1 class="card-title text-center">I prosjektmappen</h1>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                <ul>
+                    <li>
+                        Lag en fil som heter Procfile
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Skriv inn "<i>web: node </i>" etterfulgt av navnet på hovedjavascriptfilen
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Åpne hovedjavascriptfilen og bytt ut porten med "<i>process.env.PORT</i>"
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
 
-        I terminal:
-        - Åpne applikasjonsmappen i en terminal og skriv inn "heroku git:remote -a (navnet på Heroku appen(heroku-eksempel-test))"
-        - Følg instruksjonene i terminalen og logg inn i Heroku CLI
-        - Skriv inn "git add .", "git commit -am "kommentar" og "git push heroku main" i terminalen
+    <div class="card mx-auto" style="width: 60rem;">
+        <div class="card-header">
+            <h1 class="card-title text-center">I terminalen</h1>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                <ul>
+                    <li>
+                        Åpne applikasjonsmappen i en terminal og skriv inn "<i>heroku git:remote -a </i>" etterfulgt av navnet på Heroku appen
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Følg instruksjonene i terminalen og logg inn i Heroku CLI
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Skriv inn "<i>git add .</i>", "<i>git commit -am "kommentar"</i>" og "<i>git push heroku main</i>" i terminalen
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
 
-        - Gå inn på Heroku og trykk "Open app"
-    </p>
+    <div class="card mx-auto" style="width: 60rem;">
+        <div class="card-body">
+            <p class="card-text">
+                <ul>
+                    <li>
+                        Gå inn på Heroku og trykk "<i>Open app</i>"
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
 
 <%- include("partials/footer")%>
