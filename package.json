@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/Torgron/Nettsidehosting#readme",
   "dependencies": {
+    "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.1.3",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "jquery": "^3.6.0",
     "videojs-youtube": "^2.6.1"
   },
   "devDependencies": {
